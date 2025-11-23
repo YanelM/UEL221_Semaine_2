@@ -464,7 +464,7 @@ a:hover {
     padding: 0 .5rem 1rem .5rem;
 }
 .ideas-col:hover {
-	transform: scale(0.9rem);
+	transform: scale(0.9);
 }
 @media screen and (max-width: 64rem) {
     .ideas-col {
