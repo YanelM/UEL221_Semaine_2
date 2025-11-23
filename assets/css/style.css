@@ -1037,11 +1037,11 @@ a:hover {
 	position: absolute; /* Permet de placer les faces en 3D */
 	width: 300px;
 	height: 130px;
-	border: 2px solid #fff;
+	border: 2px solid var(--white-color);
 	background: #811810e3; /* Rends les faces un petit peu transparentes */
 	font-size: 100px;
 	font-family: "Arial";
-	color: #fff;
+	color: var(--white-color);
 	line-height: 80px;	
 	text-align :center;
 }
@@ -1062,6 +1062,33 @@ a:hover {
 {
 	animation-play-state: paused; /* Stoppe temporairement la rotation */
 }
+
+@media all and (max-width: 75rem) { /* -1200px */
+    .face {
+        width: 200px;
+        height: 150px;
+    }
+
+    .un { transform: rotateY(0deg) translateZ(170px); }
+    .deux { transform: rotateY(72deg) translateZ(170px); }
+    .trois { transform: rotateY(144deg) translateZ(170px); }
+    .quatre { transform: rotateY(216deg) translateZ(170px); }
+    .cinq { transform: rotateY(288deg) translateZ(170px); }
+}
+@media screen and (max-width: 38rem) { /* -600px */
+    .face {
+        width: 180px;
+        height: 150px;
+    }
+
+    .un { transform: rotateY(0deg) translateZ(140px); }
+    .deux { transform: rotateY(72deg) translateZ(140px); }
+    .trois { transform: rotateY(144deg) translateZ(140px); }
+    .quatre { transform: rotateY(216deg) translateZ(140px); }
+    .cinq { transform: rotateY(288deg) translateZ(140px); }
+}
+
+
 .footer-stats {
     flex: 1 1 100%;
     display: flex;
@@ -1076,6 +1103,8 @@ a:hover {
     padding-left: 2rem;
     padding-right: 2rem;
     flex: 0 0 15rem;
+	display: flex;
+    flex-direction: column; /* Pour que les nombres restent en haut et les textes en bas */
 }
 .footer-stats-item:first-child{
     border-left: 1px solid var(--white-color);
