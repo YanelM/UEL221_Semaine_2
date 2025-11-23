@@ -623,10 +623,22 @@ a:hover {
     border-top-left-radius: 2rem;
     border-bottom-left-radius: 2rem;
 }
-.newsletter-form-submit{
+.newsletter-form-submit {
     margin-bottom: 0;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
+    animation-name: submit-button;
+    animation-delay: 0s; /* Pas de délai avant de commencer l’animation */
+    animation-duration: 2s; /* L’animation dure 2 secondes */
+    animation-iteration-count: infinite; /* Boucle infini */
+    animation-timing-function: ease-out;
+}
+@keyframes submit-button
+{
+	0% { transform: translateX(0); }
+    50% { transform: translateX(10px); } /* Déplacement à droite de 10px */
+    100% { transform: translateX(0); }
+    
 }
 
 
