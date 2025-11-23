@@ -1024,17 +1024,17 @@ a:hover {
 /* Footer - stats
 ****************************************/
 .pentagone {
-    animation-name: anim_pentagone;
-    animation-delay: 0s;
-    animation-duration: 25s;
-    animation-iteration-count: infinite;
-    transform-style: preserve-3d;
-    animation-timing-function: linear;
+    animation-name: anim_pentagone; /* Nom de l’animation utilisée */
+    animation-delay: 0s; /* Pas de délai avant de commencer l’animation */
+    animation-duration: 25s; /* L’animation dure 25 secondes par rotation */
+    animation-iteration-count: infinite; /* Boucle infini */
+    transform-style: preserve-3d; /* Conserve la perspective 3D */
+    animation-timing-function: linear; /* Rotation sans accélération */
     height: 200px;
 }
 .face
 {
-	position: absolute;
+	position: absolute; /* Permet de placer les faces en 3D */
 	width: 300px;
 	height: 130px;
 	border: 2px solid #fff;
@@ -1045,6 +1045,9 @@ a:hover {
 	line-height: 80px;	
 	text-align :center;
 }
+									/* Positionnement des 5 faces autour d’un cercle en 3D :  
+									   On place chaque face en rotation autour de l’axe Y, 
+									   puis on la décale vers l’avant (translateZ) pour former un pentagone. */
 .un { transform: rotateY(0deg) translateZ(250px); }
 .deux { transform: rotateY(72deg) translateZ(250px); }
 .trois { transform: rotateY(144deg) translateZ(250px); }
@@ -1052,12 +1055,12 @@ a:hover {
 .cinq { transform: rotateY(288deg) translateZ(250px); }
 @keyframes anim_pentagone
 {
-	0% { transform: rotateY(0deg); }
-	100% { transform: rotateY( -360deg); }
+	0% { transform: rotateY(0deg); } /* Départ : rotation à 0° */
+	100% { transform: rotateY( -360deg); } /* Fin : rotation complète en sens inverse */
 }
 .pentagone:hover
 {
-	animation-play-state: paused;
+	animation-play-state: paused; /* Stoppe temporairement la rotation */
 }
 .footer-stats {
     flex: 1 1 100%;
