@@ -387,7 +387,6 @@ a:hover {
     border-width: 0;
     padding: .25rem 0;
     width: 100%;
-    box-shadow: 0 2px 8px rgba(0, 123, 255, 0.2);
     transform: scale(1.02);
     transition: all 0.3s ease;
 }
