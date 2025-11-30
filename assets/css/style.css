@@ -59,19 +59,15 @@ h2 {
     font-weight: 700;
     letter-spacing: 0.1em;
     transition: 0.3s;
-    text-shadow: 1px 1px 0 #ADACAC, 1px 2px 0 #ADACAC, 1px 3px 0 #ADACAC, 1px 4px 0 #ADACAC,
-    1px 5px 0 #ADACAC, 1px 6px 0 #ADACAC, 1px 7px 0 #ADACAC, 1px 8px 0 #ADACAC,
-    5px 13px 15px black;
-     transition: transform 0.3s, text-shadow 0.3s;
-  transform-origin: center;
+    text-shadow: 0 0 1px #ffffff, -1px 1px 0 #ADACAC, -2px 2px 0 #ADACAC, -3px 3px 0 #ADACAC, -4px 4px 0 #ADACAC, -4px 5px 15px black;
+    transition: transform 0.3s, text-shadow 0.3s;
+  	transform-origin: center;
 }
 
 h2:hover {
     transition: 0.3s;
-  transform: scale(1.1);
-  text-shadow: 1px -1px 0 #ADACAC, 1px -2px 0 #ADACAC, 1px -3px 0 #ADACAC,
-    1px -4px 0 #ADACAC, 1px -5px 0 #ADACAC, 1px -6px 0 #ADACAC, 1px -7px 0 #ADACAC,
-    1px -8px 0 #ADACAC, 5px -13px 15px black, 5px -13px 25px #ADACAC;
+  	transform: scale(1.1);
+  	text-shadow: 0 0 1px #ffffff, 1px -1px 0 #ADACAC, 2px -2px 0 #ADACAC, 3px -3px 0 #ADACAC, 4px -4px 0 #ADACAC, 4px -5px 15px black;
 }
 
 h3 {
