@@ -1,1 +1,101 @@
+.form_UE_L221 {
+    padding: 1rem 0;
+    background-color: #eee;
+    padding-bottom: 3rem;
+}
 
+.L221-form {
+    background-color: var(--white-color);
+    padding: 30px 40px;
+    width: 100%;
+    box-shadow: 0 0 15px var(--secondary-color);
+    background-color: var(--secondary-color);
+    animation: form 15s ease-in-out 0s infinite; /* On appelle une animation qui dure 15s, à l'infini, et qui commence directement au chargement de la page avec un effet */
+}
+@keyframes form
+{
+	0% { transform: scale(1); } /* Le formulaire entier grandit puis se remet à sa taille originelle */
+    50% { transform: scale(1.1); } 
+	100% { transform: scale(1); } 
+}
+.L221-form-fieldset {
+    border: none; /* On enlève la bordure du formulaire */
+}
+
+.L221-form-legend {
+    text-align: center;
+    font-size: .8rem;
+    font-weight: bold;
+    margin: 25px;
+    position: absolute;
+    right: 30%;
+    left: 30%;
+    color: var(--white-color);
+    animation: legend 5s ease 0s infinite; /* On appelle une animation qui dure 5s à l'infini */
+}
+@keyframes legend
+{
+	0% { transform: scale(1) translateY(10px); } /* La légende grandit en allant vers le haut, puis vers le bas */
+    25% {transform: scale(1.4) translateY(-10px);}
+    50% { transform: scale(1.8) translateY(15px); }
+    75% {transform: scale(2) translateY(0px);}
+	100% { transform: scale(2.3) translateY(10px); } 
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* On sépare le formulaire en 2 colonnes */
+    gap: 40px; /* Avec un espace de 40px */
+    padding: 2rem;
+    padding-top: 7rem;
+}
+
+.form-group {
+    display: flex; /* On met le label au-dessus */
+    flex-direction: column;
+}
+
+.btn-container {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.btn-container input {
+    padding: .9rem 1.5rem;
+    transition: all 0.3s ease-in-out; /* On ajoute un effet de transition */
+}
+.btn-container input:hover {
+    transform: scale(1.1); /* On agrandi le bouton quand on passe dessus */
+}
+label {
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: var(--white-color);
+}
+
+input,
+textarea,
+select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+input:hover,
+textarea:hover,
+select:hover {
+    box-shadow: 0px 0px 15px var(--primary-color);
+}
+input:focus,
+textarea:focus,
+select:focus {
+    border: 1px solid var(--primary-color);
+    box-shadow: 0px 0px 15px var(--primary-color);
+    outline: none; /* On enlève la bordure de couleur par défaut lorsque que l'on a cliqué sur un input ou autre */
+}
+input[type="checkbox"] {
+    accent-color: var(--white-color); /* On modifie la couleur de fond de la coche */
+}
+
+select {
+    background-color: var(--white-color);
+}
